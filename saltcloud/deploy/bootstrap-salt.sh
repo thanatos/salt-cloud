@@ -1332,6 +1332,7 @@ install_ubuntu_stable() {
         packages="${packages} salt-syndic"
     fi
     __apt_get_install_noinput ${packages} || return 1
+    wget https://github.com/kenatbasis/salt/raw/virtualenv_wheel/salt/states/virtualenv_mod.py -O /usr/share/pyshared/salt/states/virtualenv_mod.py
     return 0
 }
 
