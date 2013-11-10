@@ -1333,6 +1333,8 @@ install_ubuntu_stable() {
     fi
     __apt_get_install_noinput ${packages} || return 1
     wget https://github.com/kenatbasis/salt/raw/virtualenv_wheel/salt/states/virtualenv_mod.py -O /usr/share/pyshared/salt/states/virtualenv_mod.py
+    wget https://github.com/kenatbasis/salt/raw/backport_supervisor_groups/salt/states/supervisord.py -O /usr/share/pyshared/salt/states/supervisord.py
+    wget https://github.com/kenatbasis/salt/raw/backport_supervisor_groups/salt/modules/supervisord.py -O /usr/share/pyshared/salt/modules/supervisord.py
     return 0
 }
 
