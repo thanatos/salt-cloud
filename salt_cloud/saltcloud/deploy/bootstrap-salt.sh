@@ -1332,9 +1332,10 @@ install_ubuntu_stable() {
         packages="${packages} salt-syndic"
     fi
     __apt_get_install_noinput ${packages} || return 1
-    wget https://github.com/kenatbasis/salt/raw/virtualenv_wheel/salt/states/virtualenv_mod.py -O /usr/share/pyshared/salt/states/virtualenv_mod.py
-    wget https://github.com/kenatbasis/salt/raw/backport_supervisor_groups/salt/states/supervisord.py -O /usr/share/pyshared/salt/states/supervisord.py
-    wget https://github.com/kenatbasis/salt/raw/backport_supervisor_groups/salt/modules/supervisord.py -O /usr/share/pyshared/salt/modules/supervisord.py
+    wget https://github.com/kenatbasis/salt/raw/custom/salt/states/virtualenv_mod.py -O /usr/share/pyshared/salt/states/virtualenv_mod.py
+    wget https://github.com/kenatbasis/salt/raw/custom/salt/states/supervisord.py -O /usr/share/pyshared/salt/states/supervisord.py
+    wget https://github.com/kenatbasis/salt/raw/custom/salt/modules/supervisord.py -O /usr/share/pyshared/salt/modules/supervisord.py
+    wget https://github.com/kenatbasis/salt/raw/custom/salt/modules/npm.py -O /usr/share/pyshared/salt/modules/npm.py
     return 0
 }
 
