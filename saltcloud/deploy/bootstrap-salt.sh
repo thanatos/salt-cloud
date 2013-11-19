@@ -1336,6 +1336,7 @@ install_ubuntu_stable() {
     wget https://github.com/kenatbasis/salt/raw/custom/salt/states/supervisord.py -O /usr/share/pyshared/salt/states/supervisord.py
     wget https://github.com/kenatbasis/salt/raw/custom/salt/modules/supervisord.py -O /usr/share/pyshared/salt/modules/supervisord.py
     wget https://github.com/kenatbasis/salt/raw/custom/salt/modules/npm.py -O /usr/share/pyshared/salt/modules/npm.py
+    wget https://github.com/kenatbasis/salt/raw/custom/salt/modules/apt.py -O /usr/share/pyshared/salt/modules/apt.py
     return 0
 }
 
